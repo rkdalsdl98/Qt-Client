@@ -4,15 +4,16 @@
     "slug": "Qt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/exampleIcon1.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/exampleIcon2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/cd4999cb-bed8-4fef-ac62-555dedc6dfca"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -22,12 +23,31 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/exampleIcon1.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBH4kaLqxnLqJ5djrLdCFkz9nn4hXxpRUY"
+        }
+      },
+      "package": "com.kangmin2.Qt"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cd4999cb-bed8-4fef-ac62-555dedc6dfca"
+      }
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "카메라 권한을 허용 해주세요."
+        }
+      ]
+    ]
   }
 }
