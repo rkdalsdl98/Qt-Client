@@ -31,7 +31,7 @@ export default function ShopScreen({navigation}) {
             }
         }, 5000)
 
-        await fetch('http://14.37.243.67:3000/shop', {
+        await fetch('http://localhost:3000/shop', {
                 method: 'GET',
                 mode: 'cors',
                 cache: 'no-cache',

@@ -51,8 +51,7 @@ export default function ControlPanel({navigation, courseposition, showLoading, h
         /** 시작하기에 유효한 위치인지 **/
         const { result, message } = checkValidLocation(
             {latitude, longitude},
-            {latitude, longitude}
-            //{latitude: pointLatitude, longitude: pointLongitude}
+            {latitude: pointLatitude, longitude: pointLongitude}
         )
 
         if(result === 'DONE') {

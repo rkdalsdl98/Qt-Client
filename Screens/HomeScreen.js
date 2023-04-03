@@ -86,7 +86,7 @@ export default function HomeScreen({navigation}) {
         }, 5000)
         
         try {
-            const request = await fetch('http://14.37.243.67:3000/user/login', {
+            const request = await fetch('http://localhost:3000/user/login', {
                 method: 'POST',
                 mode: 'cors',
                 cache: 'no-cache',
@@ -125,7 +125,7 @@ export default function HomeScreen({navigation}) {
                 <HomeMain></HomeMain>
                 <Menubar></Menubar>
             </View>
-            {/* {
+            {
                 logined === '성공'
                 ?
                 <View style={{flex: 1}}>
@@ -139,7 +139,7 @@ export default function HomeScreen({navigation}) {
                         showLoading={showLoading}
                     />
                 </View>
-            } */}
+            }
         </View>
     )
 }

@@ -80,7 +80,7 @@ export default function CourseListScreen({route}) {
             }
         }, 5000)
 
-        await fetch('http://14.37.243.67:3000/course/list', {
+        await fetch('http://localhost:3000/course/list', {
             method: 'GET',
             mode: 'cors',
             cache: 'no-cache',

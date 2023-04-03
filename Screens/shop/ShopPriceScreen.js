@@ -35,7 +35,7 @@ export default function ShopPriceScreen({navigation, route}) {
 
                 value.point = subtract
 
-                await fetch('http://14.37.243.67:3000/user/update', {
+                await fetch('http://localhost:3000/user/update', {
                 method: 'PATCH',
                 mode: 'cors',
                 cache: 'no-cache',

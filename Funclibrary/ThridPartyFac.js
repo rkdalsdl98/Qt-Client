@@ -60,7 +60,7 @@ export async function requestWeatherData() {
     }, 5000)
 
     /* OpenWeather Api 정보 요청 */
-    await fetch('http://14.37.243.67:3000/api/weather', {
+    await fetch('http://localhost:3000/api/weather', {
         method: 'POST',
         mode: 'cors',
         cache: 'no-cache',
